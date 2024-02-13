@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="xoGame.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+
+<body>
+    <div id="hiddenDiv" hidden>
+        <ul class="strand">
+            <!-- <li> tags create the individual christmas lights. we're going to have 43 -->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <br><br>
+
+    </div>
+
+    <div class="body2">
+        <nav>
+            <ul>
+                <li><a href="#" id="lightTheme">Light</a></li>
+                <li><a href="#" id="darkTheme">Dark</a></li>
+                <li><a href="#" id="valentinesTheme">Valentine's</a></li>
+                <li><a href="#" id="christmasTheme">Christmas</a></li>
+            </ul>
+        </nav>
+        <h1>Drawing game</h1>
+        <div class="player-names-container">
+            <p id="userCont">Player1 : <span id="user"></span></p>
+            <p id="oppNameCont">Player2 : <span id="oppName"></span></p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <p id="enterName">Enter your name : </p>
+            <input type="text" placeholder="Name" id="name" autocomplete="off">
+        </div>
+        <button id="find">Search for a player</button>
+        <img id="loading" src="loading.gif" alt="">
+        <div id="bigcont">
+            <div id="cont">
+                <div class="parent">
+                    <div class="div1">
+                        <div class="drawingTools">
+
+                            <div class="element">
+                                <button id="eraseBtn">Erase</button>
+                            </div>
+                            <div class="element">
+                                <input type="color" id="colorPicker" value="#000000">
+                            </div>
+                            <div class="element">
+                                <input type="range" id="sizeSlider" min="1" max="20" value="2">
+                            </div>
+                            <div class="element"> 
+                                <button id="exitBtn">Exit Game</button> 
+                            </div> 
+
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <canvas id="canvas" width="800" height="600" style="background-color: white;"></canvas>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+    <script src="/design.js"></script>
+    </div>
+</body>
+
+</html>
